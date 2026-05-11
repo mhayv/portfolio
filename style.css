@@ -193,5 +193,19 @@ width: 500px;
 hr {
   height : 40px;
 }
+
+/*space at bottom*/
+.space {
+  padding: 20px;
+}
+
+footer {
+  padding-bottom: 30px;
+}
+
+.footerConnect {
+  padding: 50px; 
+  text-align: left;
+}
  
 
