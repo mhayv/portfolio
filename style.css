@@ -107,6 +107,7 @@ body {
   background-size: 100% 32px;
 }
 
+/*explore other projects*/
 .explore {
   font-size: 38px;
 }
@@ -171,29 +172,17 @@ width: 500px;
   display: block;
 }
 
-
-
-
-
-
-.caseStudy {
-  display: flex;
-  gap: 40px;
-  max-width: 900px;
-  margin: 80px auto;
+.projectInfo {
+  text-align: left;
+  padding: 45px;
 }
-.leftBox {
-  flex: 1;
-  background: #f2e8ff;
-  padding: 20px;
-  border-radius: 8px;
+.projectInfo.Title {
+ margin-top: 0px;
+   font-size: 34px;
 }
-.rightBox {
-  flex: 2;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
+.projectInfo.Body {
+ margin-top: 0px;
+   font-size: 20px;
 }
-.leftBox, .rightBox {
-  border: 2px solid blue;
-}
+ 
+
