@@ -22,7 +22,7 @@ a {
 .navLinks a {
   text-decoration: none;
   color: black;
-  background: #ffd7ef;
+  background: #ecd7ff;
   padding: 8px 20px;
   border-radius: 4px;
   transition: 0.2s ease;
@@ -31,7 +31,7 @@ a {
 
 .navLinks a:hover {
   transform: scale(1.08);
-  background: #ffb6dc;
+  background: #dbb6ff;
 }
 
 body {
@@ -174,7 +174,7 @@ width: 500px;
 
 .projectInfo {
   text-align: left;
-  padding: 45px;
+  padding: 20px;
 }
 .projectInfo.Title {
  margin-top: 0px;
@@ -183,6 +183,15 @@ width: 500px;
 .projectInfo.Body {
  margin-top: 0px;
    font-size: 20px;
+}
+.projectInfo.Para {
+ margin-top: 0px;
+   font-size: 20px;
+   text-align: right;
+}
+
+hr {
+  height : 40px;
 }
  
 
