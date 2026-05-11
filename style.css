@@ -1,7 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+  font-family: "barlow", sans-serif;
+font-weight: 400;
+ text-align: center;
   background-color: #000000;
+font-style: normal;
   margin: 0;
   padding: 0;
 }
