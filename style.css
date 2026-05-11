@@ -10,45 +10,48 @@ nav {
   padding: 0px 4px;
 }
 
+a {
+  text-decoration: none;
+  color:#390368;
+}
+
 .logo img {
   width: 150px;
 }
 
 .navLinks a {
   text-decoration: none;
-
   color: black;
-
   background: #ffd7ef;
-
   padding: 8px 20px;
-
   border-radius: 4px;
-
   transition: 0.2s ease;
-
   display: inline-block;
 }
 
 .navLinks a:hover {
   transform: scale(1.08);
-
   background: #ffb6dc;
 }
 
 body {
   font-family: "barlow", sans-serif;
-font-weight: 400;
- text-align: center;
+  font-weight: 400;
+  text-align: center;
   background-color: #000000;
-font-style: normal;
+  font-style: normal;
   margin: 0;
   padding: 0;
 }
 
+#mjIntro {
+  font-weight: 400;
+  font-size: 20px;
+}
+
 #text {
   font-weight: 400;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 
@@ -84,7 +87,7 @@ button {
   border: none;
   background-color: rgb(43, 4, 82);
   color: white;
-  cursor:crosshair;
+  cursor: crosshair;
   border-radius: 5px;
 }
 
@@ -92,47 +95,42 @@ button:hover {
   background-color: royalblue;
 }
 
+/*not used atm
 .projectStatement {
   color: white;
-}
+} */
 
 body {
   background-color: #f6f1e8;
-
   background-image:
     linear-gradient(to bottom, transparent 31px, #dcdcdc 32px);
-
   background-size: 100% 32px;
 }
 
+.explore {
+  font-size: 38px;
+}
 
 
 
 
 .projectCard {
   position: relative;
-
   width: 300px;
   margin: 100px auto;
-
   padding: 2rem;
-
   background: #d8b2f7;
-
   border: 2px solid #9f5dd4;
-
-   border-radius: 4px 4px 4px 4px;
-
-  box-shadow: 8px 8px 0px  #7c46a8;
-
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 8px 8px 0px #7c46a8;
   transform: rotate(-1deg);
 }
 
 .projectCard {
   background: #d8b2f7;
-
   transition: 0.3s ease;
 }
+
 .projectCard:hover {
   background: #4d2072;
   transform: scale(1.08);
@@ -141,21 +139,27 @@ body {
 
 .tape {
   position: absolute;
-
   width: 100px;
-  height: 30px; 
-
+  height: 30px;
   background: rgba(236, 204, 21, 0.639);
-
   top: -15px;
   left: 50%;
-
   transform:
-    translateX(-50%)
-    rotate(-6deg);
-
+    translateX(-50%) rotate(-6deg);
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.974);
-
   backdrop-filter: blur(2px);
+}
+
+.journalLogo {
+width: 500px;
+}
+
+
+/*Project Styling */
+#projectTitle {
+  text-align: left;
+  padding: 45px;
+  font-weight: 700;
+  color:  rgba(29, 29, 29, 0.643);
 }
