@@ -24,3 +24,70 @@ button {
 button:hover {
   background-color: royalblue;
 }
+
+.projectStatement {
+  color: white;
+}
+
+body {
+  background-color: #f6f1e8;
+
+  background-image:
+    linear-gradient(to bottom, transparent 31px, #dcdcdc 32px);
+
+  background-size: 100% 32px;
+}
+
+
+
+
+
+.projectCard {
+  position: relative;
+
+  width: 300px;
+  margin: 100px auto;
+
+  padding: 2rem;
+
+  background: #d8b2f7;
+
+  border: 2px solid #9f5dd4;
+
+   border-radius: 4px 4px 4px 4px;
+
+  box-shadow: 8px 8px 0px  #7c46a8;
+
+  transform: rotate(-1deg);
+}
+
+.projectCard {
+  background: #d8b2f7;
+
+  transition: 0.3s ease;
+}
+.projectCard:hover {
+  background: #4d2072;
+}
+
+
+.tape {
+  position: absolute;
+
+  width: 100px;
+  height: 30px; 
+
+  background: rgba(236, 204, 21, 0.639);
+
+  top: -15px;
+  left: 50%;
+
+  transform:
+    translateX(-50%)
+    rotate(-6deg);
+
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.974);
+
+  backdrop-filter: blur(2px);
+}
