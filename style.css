@@ -156,11 +156,6 @@ body {
   backdrop-filter: blur(2px);
 }
 
-.journalLogo {
-width: 500px;
-}
-
-
 /*PROJECT STYLING */
 #projectTitle {
   text-align: left;
@@ -210,6 +205,63 @@ width: 500px;
 .projectprocessimages.tiny {
   width: 183px;
 }
+
+.researchQuestion {
+  width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.finalImages {
+  display: flex;
+
+  gap: 20px;
+
+  align-items: flex-start;
+}
+.poster {
+  width: 50%;
+}
+
+.poster img {
+  width: 100%;
+
+  display: block;
+}
+.caseImages {
+  width: 50%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+.caseImages img {
+  width: 100%;
+
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 hr {
   height : 10px;
