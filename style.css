@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   color: white;
   padding: 20px;
@@ -41,7 +45,7 @@ body {
   background-color: #000000;
   font-style: normal;
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 
 #mjIntro {
@@ -157,7 +161,7 @@ width: 500px;
 }
 
 
-/*Project Styling */
+/*PROJECT STYLING */
 #projectTitle {
   text-align: left;
   padding: 45px;
@@ -172,6 +176,7 @@ width: 500px;
   display: block;
 }
 
+/*Project Overview Section*/
 .projectInfo {
   text-align: left;
   padding: 20px;
@@ -180,18 +185,34 @@ width: 500px;
  margin-top: 0px;
    font-size: 34px;
 }
+
 .projectInfo.Body {
- margin-top: 0px;
-   font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
 }
-.projectInfo.Para {
- margin-top: 0px;
-   font-size: 20px;
-   text-align: right;
+.projectBaseInfo {
+  text-align: left;
+}
+.projectBlurb {
+  text-align: right;
+}
+
+/*Deeper Project Information, i.e problem, evolution, etc*/
+.projectbodyinfo {
+  padding : 45px;
+}
+
+.projectprocessimages {
+  width: 150px;
+}
+.projectprocessimages.tiny {
+  width: 183px;
 }
 
 hr {
-  height : 40px;
+  height : 10px;
 }
 
 /*space at bottom*/
@@ -200,12 +221,24 @@ hr {
 }
 
 footer {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 45px;
 }
 
 .footerConnect {
-  padding: 50px; 
   text-align: left;
 }
+.footerCredit {
+  text-align: right;
+}
+
+
+
+
+ 
  
 
