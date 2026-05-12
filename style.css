@@ -159,9 +159,9 @@ body {
 /*PROJECT STYLING */
 #projectTitle {
   text-align: left;
-  padding: 45px;
+  padding: 30px;
   font-weight: 700;
-  color:  rgba(29, 29, 29, 0.643);
+  color:  rgba(97, 94, 94, 0.643);
 }
 
 .projectImage {
