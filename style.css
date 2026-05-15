@@ -193,6 +193,20 @@ body {
   width: 50%;
 }
 
+.tape {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background: rgba(236, 204, 21, 0.639);
+  top: -15px;
+  left: 50%;
+  transform:
+    translateX(-50%) rotate(-6deg);
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.974);
+  backdrop-filter: blur(2px);
+}
+
 
 
 
