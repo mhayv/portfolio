@@ -115,10 +115,7 @@ body {
 .explore {
   font-size: 38px;
 }
-
-
-
-
+/* TESTING LAYOUT
 .projectCard {
   position: relative;
   width: 300px;
@@ -132,6 +129,11 @@ body {
 }
 
 .projectCard {
+  background: #d8b2f7;
+  transition: 0.3s ease;
+}
+
+.projectCard.leftCard {
   background: #d8b2f7;
   transition: 0.3s ease;
 }
@@ -155,8 +157,57 @@ body {
   border-right: 1px solid rgba(255, 255, 255, 0.974);
   backdrop-filter: blur(2px);
 }
+  */
 
-/*PROJECT STYLING */
+
+
+
+
+
+
+
+
+.projectSection {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: 120px 0;
+}
+
+.leftLayout {
+  flex-direction: row;
+  transform: rotate(-1deg);
+}
+.rightLayout {
+  flex-direction: row-reverse;
+  transform: rotate(1deg);
+}
+
+.projectSection img {
+  width: 50%;
+  border: 2px solid #9f5dd4;
+  box-shadow: 8px 8px 0px #7c46a8;
+}
+
+.projectCard {
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CASE STUDY STYLING */
 #projectTitle {
   text-align: left;
   padding: 30px;
