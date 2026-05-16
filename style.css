@@ -48,7 +48,12 @@ body {
   padding: 0px;
 }
 
+.landingHero {
+  width: 100%;
+}
+
 #mjIntro {
+  margin-top: 80px;
   font-weight: 400;
   font-size: 20px;
 }
@@ -67,19 +72,15 @@ body {
 .jumbled span:nth-child(1) {
   transform: rotate(-4deg);
 }
-
 .jumbled span:nth-child(2) {
   transform: rotate(2deg);
 }
-
 .jumbled span:nth-child(3) {
   transform: rotate(-2deg);
 }
-
 .jumbled span:nth-child(4) {
   transform: rotate(5deg);
 }
-
 .jumbled span:nth-child(5) {
   transform: rotate(-3deg);
 }
@@ -161,26 +162,30 @@ body {
 
 
 
-
-
-
-
-
-
 .projectSection {
   display: flex;
   align-items: center;
   gap: 60px;
-  margin: 120px 0;
+  margin: 120px auto;
+  padding: 0 40px;
+  max-width: 1200px;
+  transition: 0.3s ease;
+}
+
+.projectSection:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .leftLayout {
   flex-direction: row;
   transform: rotate(-1deg);
+  padding-left: 40px;
 }
 .rightLayout {
   flex-direction: row-reverse;
   transform: rotate(1deg);
+  padding-right: 40px;
 }
 
 .projectSection img {
@@ -193,19 +198,13 @@ body {
   width: 50%;
 }
 
-.tape {
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  background: rgba(236, 204, 21, 0.639);
-  top: -15px;
-  left: 50%;
-  transform:
-    translateX(-50%) rotate(-6deg);
-  border-left: 1px solid rgba(255, 255, 255, 0.4);
-  border-right: 1px solid rgba(255, 255, 255, 0.974);
-  backdrop-filter: blur(2px);
+.projectLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
+
+
 
 
 
