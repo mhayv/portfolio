@@ -1,6 +1,20 @@
 const colors = ["#00B088", "#FAA819", "#1ABFF1", "#FFCB05", "#959BCA", "#F495AE"];
 
+let lastX = 0;
+let lastY = 0;
+
 document.addEventListener("mousemove", (e) => {
+  const dx = e.clientX - lastX;
+  const dy = e.clientY - lastY;
+
+  const distance = Math.sqrt(dx * dx + dy * dy);
+
+  // controls how often circles appear (higher = fewer circles)
+  if (distance < 15) return;
+
+  lastX = e.clientX;
+  lastY = e.clientY;
+
   const trail = document.createElement("div");
   trail.className = "trail";
 
@@ -17,7 +31,8 @@ document.addEventListener("mousemove", (e) => {
 
   document.body.appendChild(trail);
 
+  // controls how long circles stay (higher = longer lasting)
   setTimeout(() => {
     trail.remove();
-  }, 800);
+  }, 2000);
 });
