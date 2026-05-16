@@ -235,7 +235,7 @@ body {
   display: block;
 }
 
-/*Project Overview Section*/
+/*Project Overview Section -- TESTING SOMETHING ATM
 .projectInfo {
   text-align: left;
   padding: 20px;
@@ -256,7 +256,55 @@ body {
 }
 .projectBlurb {
   text-align: right;
+}*/
+
+
+/*Project Overview Section*/
+.projectInfo {
+  text-align: left;
+  padding: 20px;
 }
+
+.projectInfo.Body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* important so notes stack nicely */
+  gap: 40px;
+  padding: 35px;
+}
+
+/* LEFT SIDE */
+.stickyNotes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* sticky note styling */
+.stickyNote {
+  background: #4493e8; /* pick one of your secondary colors */
+  padding: 12px 14px;
+  width: 180px;
+
+  transform: rotate(-1deg);
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+
+  font-size: 14px;
+}
+
+/* optional slight variation for “realness” */
+.stickyNote:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+/* RIGHT SIDE */
+.projectBlurb {
+  max-width: 420px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+
 
 /*Deeper Project Information, i.e problem, evolution, etc*/
 .projectbodyinfo {
