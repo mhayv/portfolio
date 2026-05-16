@@ -9,7 +9,6 @@ document.addEventListener("mousemove", (e) => {
 
   const distance = Math.sqrt(dx * dx + dy * dy);
 
-  // controls how often circles appear (higher = fewer circles)
   if (distance < 15) return;
 
   lastX = e.clientX;
@@ -31,7 +30,6 @@ document.addEventListener("mousemove", (e) => {
 
   document.body.appendChild(trail);
 
-  // controls how long circles stay (higher = longer lasting)
   setTimeout(() => {
     trail.remove();
   }, 2000);
