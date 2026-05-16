@@ -1,12 +1,19 @@
+const colors = ["#00B088", "#FAA819", "#1ABFF1", "#FFCB05", "#959BCA", "#F495AE"];
+
 document.addEventListener("mousemove", (e) => {
   const trail = document.createElement("div");
   trail.className = "trail";
 
-  const colors = ["#00B088", "#FAA819", "#1ABFF1", "#FFCB05", "#959BCA", "#F495AE"];
-  trail.style.background = colors[Math.floor(Math.random() * colors.length)];
+  const size = Math.random() * 10 + 4; // 4–14px
+  const color = colors[Math.floor(Math.random() * colors.length)];
+
+  trail.style.width = size + "px";
+  trail.style.height = size + "px";
 
   trail.style.left = e.clientX + "px";
   trail.style.top = e.clientY + "px";
+
+  trail.style.background = color;
 
   document.body.appendChild(trail);
 
