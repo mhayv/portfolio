@@ -90,14 +90,14 @@ body {
 button {
   padding: 10px 20px;
   border: none;
-  background-color: rgb(43, 4, 82);
+  background-color: rgb(89, 0, 178);
   color: white;
   cursor: crosshair;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: royalblue;
+  background-color: rgb(139, 81, 234);
 }
 
 /*not used atm
@@ -106,7 +106,7 @@ button:hover {
 } */
 
 body {
-  background-color: #f6f1e8;
+  background-color: #f5efdf;
   background-image:
     linear-gradient(to bottom, transparent 31px, #dcdcdc 32px);
   background-size: 100% 32px;
@@ -161,7 +161,6 @@ body {
   */
 
 
-
 .projectSection {
   display: flex;
   align-items: center;
@@ -208,6 +207,26 @@ body {
 
 
 
+
+
+
+
+.trail {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  pointer-events: none;
+  opacity: 1;
+  animation: fadeOut 0.8s linear forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(10px) scale(0.3);
+  }
+}
 
 
 
@@ -268,31 +287,44 @@ body {
 .projectInfo.Body {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* important so notes stack nicely */
+  align-items: flex-start;
   gap: 40px;
-  padding: 35px;
+  padding: 100px 150px;
 }
 
 /* LEFT SIDE */
 .stickyNotes {
-  display: flex;
-  flex-direction: column;
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
-/* sticky note styling */
-.stickyNote {
-  background: #4493e8; /* pick one of your secondary colors */
+.stickyNote.Journal{
+  background: #E6B9C7;
   padding: 12px 14px;
   width: 180px;
-
   transform: rotate(-1deg);
   box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
-
   font-size: 14px;
 }
 
-/* optional slight variation for “realness” */
+.stickyNote.Data{
+  background: #8DBEB7;
+  padding: 12px 14px;
+  width: 180px;
+  transform: rotate(-1deg);
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
+
+.stickyNote.Metro{
+  background: #507fe6;
+  padding: 12px 14px;
+  width: 180px;
+  transform: rotate(-1deg);
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
 .stickyNote:nth-child(even) {
   transform: rotate(1deg);
 }
@@ -301,8 +333,9 @@ body {
 .projectBlurb {
   max-width: 420px;
   text-align: left;
-  line-height: 1.5;
+  line-height: 2.5;
 }
+
 
 
 
