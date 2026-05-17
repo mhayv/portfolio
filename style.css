@@ -2,25 +2,34 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "polymath", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background-color: #000000;
+  font-style: normal;
+  margin: 0;
+  padding: 0px;
+}
+
 header {
-  color: white;
-  padding: 20px;
+  padding: 30px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 4px;
+  padding: 0px 0px;
+}
+
+.logo img {
+  width: 150px;
 }
 
 a {
   text-decoration: none;
   color:#390368;
-}
-
-.logo img {
-  width: 150px;
 }
 
 .navLinks a {
@@ -38,32 +47,15 @@ a {
   background: #dbb6ff;
 }
 
-body {
-  font-family: "barlow", sans-serif;
-  font-weight: 400;
-  text-align: center;
-  background-color: #000000;
-  font-style: normal;
-  margin: 0;
-  padding: 0px;
-}
-
+/* testing
 .landingHero {
   width: 100%;
 }
 
-#mjIntro {
-  margin-top: 80px;
-  font-weight: 400;
-  font-size: 20px;
-}
-
-#text {
-  font-weight: 400;
-  font-size: 45px;
-}
-
-
+.landingText {
+  text-align: left;
+  margin: 20px 45px;
+}*/
 
 /*  Jumbled text styling, if ever I want to use it..
 .jumbled span {
@@ -87,17 +79,50 @@ body {
   */
 
 
+.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* THIS is what keeps your text stacked */
+.landingTextGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* image stays on the right */
+.landingHero {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  margin:50px;
+}
+
+#text {
+  font-weight: 400;
+  font-size: 25px;
+  margin: 20px 45px;
+  text-align: left;
+}
+
+
 button {
   padding: 10px 20px;
   border: none;
   background-color: rgb(89, 0, 178);
   color: white;
   cursor: crosshair;
-  border-radius: 5px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: flex-start;
+   margin: 20px 45px;
 }
 
 button:hover {
-  background-color: rgb(139, 81, 234);
+background-color: rgb(139, 81, 234);
 }
 
 /*not used atm
@@ -106,10 +131,10 @@ button:hover {
 } */
 
 body {
-  background-color: #f5efdf;
-  background-image:
-    linear-gradient(to bottom, transparent 31px, #dcdcdc 32px);
-  background-size: 100% 32px;
+background-color: #FDF5EB;
+background-image:
+linear-gradient(to bottom, transparent 31px, #f0e8f8 3px);
+background-size: 100% 32px;
 }
 
 /*explore other projects*/
