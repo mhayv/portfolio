@@ -1,7 +1,7 @@
+/*base information*/
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "polymath", sans-serif;
   font-weight: 700;
@@ -10,38 +10,37 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0px;
+  background-color: #FDF5EB;
+  background-image:
+    linear-gradient(to bottom, transparent 31px, #f0e8f8 3px);
+  background-size: 100% 32px;
 }
-
 header {
   padding: 30px;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 0px;
 }
-
 .logo img {
   width: 150px;
 }
 
 a {
   text-decoration: none;
-  color:#390368;
+  color: #390368;
 }
-
 .navLinks a {
   text-decoration: none;
-  color: black;
+  color: rgb(40, 0, 73);
   background: #ecd7ff;
   padding: 8px 20px;
   border-radius: 4px;
   transition: 0.2s ease;
   display: inline-block;
 }
-
 .navLinks a:hover {
   transform: scale(1.08);
   background: #dbb6ff;
@@ -78,51 +77,65 @@ a {
 }
   */
 
-
+/*landing text + image*/
 .landing {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 40px;
 }
-
-/* THIS is what keeps your text stacked */
 .landingTextGroup {
   display: flex;
+  text-align: left;
   flex-direction: column;
-  gap: 10px;
+  margin: 0px 0px 0px 45px;
+  font-size: 35px;
+  line-height: 0.5;
 }
-
-/* image stays on the right */
 .landingHero {
   width: 40%;
   height: auto;
   object-fit: cover;
-  margin:50px;
+  margin: 50px;
 }
-
 #text {
   font-weight: 400;
   font-size: 25px;
-  margin: 20px 45px;
+  margin: 20px 0px;
   text-align: left;
+  line-height: 1.5;
 }
 
+/*landing page highlight*/
+.highlight1 {
+  background: #c78bfc;
+  padding: 0 6px;
+  box-decoration-break: clone;
+  border-radius: 2.5px;
+}
+.highlight2 {
+  background: #eb6ede;
+  padding: 0 6px;
+  box-decoration-break: clone;
+  border-radius: 2.5px;
+}
 
+/*about me button*/
 button {
-  padding: 10px 20px;
+  padding: 15px 20px;
   border: none;
-  background-color: rgb(89, 0, 178);
+  background-color: rgb(148, 97, 231);
   color: white;
-  cursor: crosshair;
+  cursor: e-resize;
   border-radius: 50px;
   display: flex;
   justify-content: flex-start;
-   margin: 20px 45px;
+  margin: 20px 0px;
 }
-
 button:hover {
-background-color: rgb(139, 81, 234);
+  background-color: rgb(97, 55, 168);
+  transition: 0.2s ease;
+  transform: scale(1.08);
 }
 
 /*not used atm
@@ -130,17 +143,11 @@ background-color: rgb(139, 81, 234);
   color: white;
 } */
 
-body {
-background-color: #FDF5EB;
-background-image:
-linear-gradient(to bottom, transparent 31px, #f0e8f8 3px);
-background-size: 100% 32px;
-}
-
 /*explore other projects*/
 .explore {
   font-size: 38px;
 }
+
 /* TESTING LAYOUT
 .projectCard {
   position: relative;
@@ -206,6 +213,7 @@ background-size: 100% 32px;
   transform: rotate(-1deg);
   padding-left: 40px;
 }
+
 .rightLayout {
   flex-direction: row-reverse;
   transform: rotate(1deg);
@@ -235,7 +243,7 @@ background-size: 100% 32px;
 
 
 
-
+/*wonderful whimsical rainbow trail*/
 .trail {
   position: fixed;
   border-radius: 50%;
@@ -253,22 +261,12 @@ background-size: 100% 32px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*CASE STUDY STYLING */
 #projectTitle {
   text-align: left;
   padding: 30px;
   font-weight: 700;
-  color:  rgba(97, 94, 94, 0.643);
+  color: rgba(97, 94, 94, 0.643);
 }
 
 .projectImage {
@@ -316,39 +314,46 @@ background-size: 100% 32px;
   padding: 100px 150px;
 }
 
+.projectbodyinfo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 /* LEFT SIDE */
 .stickyNotes {
- display: grid;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
-.stickyNote.Journal{
+.stickyNote.Journal {
   background: #E6B9C7;
   padding: 12px 14px;
   width: 180px;
   transform: rotate(-1deg);
-  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
 
-.stickyNote.Data{
+.stickyNote.Data {
   background: #8DBEB7;
   padding: 12px 14px;
   width: 180px;
   transform: rotate(-1deg);
-  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
 
-.stickyNote.Metro{
+.stickyNote.Metro {
   background: #507fe6;
   padding: 12px 14px;
   width: 180px;
   transform: rotate(-1deg);
-  box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
+
 .stickyNote:nth-child(even) {
   transform: rotate(1deg);
 }
@@ -365,12 +370,13 @@ background-size: 100% 32px;
 
 /*Deeper Project Information, i.e problem, evolution, etc*/
 .projectbodyinfo {
-  padding : 45px;
+  padding: 45px;
 }
 
 .projectprocessimages {
   width: 150px;
 }
+
 .projectprocessimages.tiny {
   width: 183px;
 }
@@ -397,6 +403,7 @@ background-size: 100% 32px;
 
   align-items: flex-start;
 }
+
 .poster {
   width: 50%;
 }
@@ -406,6 +413,7 @@ background-size: 100% 32px;
 
   display: block;
 }
+
 .caseImages {
   width: 50%;
 
@@ -415,6 +423,7 @@ background-size: 100% 32px;
 
   gap: 2px;
 }
+
 .caseImages img {
   width: 100%;
 
@@ -442,7 +451,7 @@ background-size: 100% 32px;
 
 
 hr {
-  height : 10px;
+  height: 10px;
 }
 
 /*space at bottom*/
@@ -462,6 +471,7 @@ footer {
 .footerConnect {
   text-align: left;
 }
+
 .footerCredit {
   text-align: right;
 }
@@ -469,6 +479,35 @@ footer {
 
 
 
- 
- 
 
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Main constrained content */
+.testcontent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Regular images stay inside content width */
+.testnormal-img {
+  width: 100%;
+  display: block;
+}
+
+/* Full-width breakout image */
+.testfull-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  display: block;
+}
