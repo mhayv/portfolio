@@ -27,19 +27,33 @@ nav {
 .logo img {
   width: 150px;
 }
+/*wonderful whimsical rainbow trail*/
+.trail {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 1;
+  animation: fadeOut 2s ease-out forwards;
+  z-index: 9999;
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
 
 a {
   text-decoration: none;
-  color: #390368;
 }
 .navLinks a {
   text-decoration: none;
-  color: rgb(40, 0, 73);
-  background: #ecd7ff;
-  padding: 8px 20px;
-  border-radius: 4px;
-  transition: 0.2s ease;
+  color: rgb(255, 255, 255);
+  background: #ae6edf;
+  padding: 8px 15px;
+  border-radius:12px;
   display: inline-block;
+  margin:5px;
 }
 .navLinks a:hover {
   transform: scale(1.08);
@@ -136,6 +150,10 @@ button:hover {
   background-color: rgb(97, 55, 168);
   transition: 0.2s ease;
   transform: scale(1.08);
+}
+
+.space2 {
+  padding:50px;
 }
 
 /*not used atm
@@ -237,30 +255,6 @@ button:hover {
 }
 
 
-
-
-
-
-
-
-/*wonderful whimsical rainbow trail*/
-.trail {
-  position: fixed;
-  border-radius: 50%;
-  pointer-events: none;
-  opacity: 1;
-  animation: fadeOut 2s ease-out forwards;
-  z-index: 9999;
-}
-
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    transform: scale(0.3);
-  }
-}
-
-
 /*CASE STUDY STYLING */
 #projectTitle {
   text-align: left;
@@ -268,7 +262,6 @@ button:hover {
   font-weight: 700;
   color: rgba(97, 94, 94, 0.643);
 }
-
 .projectImage {
   width: 100%;
   height: 500px;
@@ -305,7 +298,6 @@ button:hover {
   text-align: left;
   padding: 20px;
 }
-
 .projectInfo.Body {
   display: flex;
   justify-content: space-between;
@@ -313,7 +305,6 @@ button:hover {
   gap: 40px;
   padding: 100px 150px;
 }
-
 .projectbodyinfo {
   max-width: 100%;
   max-height: 100%;
@@ -372,142 +363,88 @@ button:hover {
 .projectbodyinfo {
   padding: 45px;
 }
-
 .projectprocessimages {
   width: 150px;
 }
-
 .projectprocessimages.tiny {
   width: 183px;
 }
-
 .researchQuestion {
   width: 100%;
-
 }
 
-
-
-
-
-
-
-
-
-
-
+/*JOURNAL TABLE CASE STUDY*/
 .finalImages {
   display: flex;
-
   gap: 20px;
-
   align-items: flex-start;
 }
-
 .poster {
   width: 50%;
 }
-
 .poster img {
   width: 100%;
-
   display: block;
 }
-
 .caseImages {
   width: 50%;
-
   display: flex;
-
   flex-direction: column;
-
   gap: 2px;
 }
-
 .caseImages img {
   width: 100%;
-
   display: block;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*divider line*/
 hr {
   height: 10px;
 }
-
 /*space at bottom*/
 .space {
   padding: 20px;
 }
-
+/*footer*/
 footer {
   padding-bottom: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 20px 45px;
 }
-
 .footerConnect {
   text-align: left;
 }
-
 .footerCredit {
   text-align: right;
 }
 
 
 
-
-
-
-
-
-
-
-
+/*TEST CODE
 
 body {
   margin: 0;
   font-family: sans-serif;
 }
-
-/* Main constrained content */
+Main constrained content
 .testcontent {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
-
-/* Regular images stay inside content width */
+Regular images stay inside content width
 .testnormal-img {
   width: 100%;
   display: block;
 }
-
-/* Full-width breakout image */
+Full-width breakout image
 .testfull-bleed {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   display: block;
-}
+}*/
