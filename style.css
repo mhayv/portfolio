@@ -4,7 +4,7 @@ html {
 }
 body {
   font-family: "polymath", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   text-align: center;
   background-color: #000000;
   font-style: normal;
@@ -302,17 +302,24 @@ button:hover {
 
 
 /*CASE STUDY STYLING */
-#projectTitle {
-  text-align: left;
-  padding: 30px;
-  font-weight: 700;
-  color: rgba(97, 94, 94, 0.643);
-}
 .projectImage {
   width: 100%;
-  height: 500px;
+  height: 550px;
   object-fit: cover;
   display: block;
+}
+#projectTitle {
+  text-align: left;
+  font-weight: 700;
+  color: rgba(97, 94, 94, 0.643);
+  padding: 0 100px;
+  margin: 40px 0 10px 0;
+}
+.projectInfoTitle {
+margin: 0px 0 10px 0;
+  padding: 0 100px;
+  text-align: left;
+  font-size:70px;
 }
 
 /*Project Overview Section -- TESTING SOMETHING ATM
@@ -338,7 +345,6 @@ button:hover {
   text-align: right;
 }*/
 
-
 /*Project Overview Section*/
 .projectInfo {
   text-align: left;
@@ -348,8 +354,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 40px;
-  padding: 100px 150px;
+  padding: 15px 100px 50px;
 }
 .projectbodyinfo {
   max-width: 100%;
@@ -361,18 +366,19 @@ button:hover {
 .stickyNotes {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 20px;
 }
-
+.stickySmall {
+  font-weight:400;
+}
 .stickyNote.Journal {
   background: #E6B9C7;
-  padding: 12px 14px;
+  padding: 16px 16px;
   width: 180px;
   transform: rotate(-1deg);
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
-  font-size: 14px;
+  font-size: 16px;
 }
-
 .stickyNote.Data {
   background: #8DBEB7;
   padding: 12px 14px;
@@ -381,7 +387,6 @@ button:hover {
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
-
 .stickyNote.Metro {
   background: #507fe6;
   padding: 12px 14px;
@@ -390,25 +395,30 @@ button:hover {
   box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
-
 .stickyNote:nth-child(even) {
   transform: rotate(1deg);
 }
 
 /* RIGHT SIDE */
+.blurbWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  max-width: 800px;
+  padding-left: 30px;
+}
 .projectBlurb {
-  max-width: 420px;
+  margin: 0;
   text-align: left;
   line-height: 2.5;
+  font-weight: 400;
 }
-
-
 
 
 /*Deeper Project Information, i.e problem, evolution, etc*/
 .constrainedProjectbodyinfo {
   padding: 45px;
-  margin: 80px;
+  margin: 0px 80px;
 }
 
 .projectSubTitle{
@@ -422,11 +432,46 @@ color: rgb(139, 139, 139);
   line-height: 1.5;
 }
 
-.projectprocessimages {
-  width: 150px;
+.center {
+  text-align:center;
+  font-weight:300;
 }
-.projectprocessimages.tiny {
-  width: 183px;
+
+.comment {
+  margin-top:5px;
+  color:gray;
+  font-weight: 300;
+font-style: italic;
+}
+
+/*journal process 1*/
+.processImageRow {
+  display: flex;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.projectprocessimages {
+  flex: 1;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  border-radius: 3px;
+}
+
+/*journal process 2*/
+.processImageRowJ2 {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.projectprocessimagesJ2 {
+  width: 320px;     /* consistent control */
+  height: 400px;
+  object-fit: cover;
+  display: block;
+    border-radius: 3px;
 }
 
 .researchQuestion {
@@ -461,10 +506,21 @@ color: rgb(139, 139, 139);
   width: 100%;
   display: block;
 }
+.caseImgJR img{
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+}
 
 
-
-
+/*between end of Project and view other projects*/
+.largeDivider {
+  height: 3px;             
+  background-color: rgb(196, 196, 196);
+  border: none;
+}
 /*divider line*/
 hr {
   height: 10px;
