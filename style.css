@@ -380,7 +380,7 @@ margin: 0px 0 10px 0;
   font-size: 16px;
 }
 .stickyNote.Data {
-  background: #8DBEB7;
+  background: #1B61B7;
   padding: 12px 14px;
   width: 180px;
   transform: rotate(-1deg);
@@ -388,7 +388,8 @@ margin: 0px 0 10px 0;
   font-size: 14px;
 }
 .stickyNote.Metro {
-  background: #507fe6;
+  background: #1a2a55;
+  color: white;
   padding: 12px 14px;
   width: 180px;
   transform: rotate(-1deg);
