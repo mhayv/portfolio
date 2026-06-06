@@ -1,0 +1,72 @@
+/*CASE STUDY STYLING*/
+.projectImage {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  display: block;
+}
+#projectTitle {
+  text-align: left;
+  font-weight: 700;
+  color: rgba(97, 94, 94, 0.643);
+  padding: 0 100px;
+  margin: 40px 0 10px 0;
+}
+.projectInfoTitle {
+margin: 0px 0 10px 0;
+  padding: 0 100px;
+  text-align: left;
+  font-size:70px;
+}
+
+
+
+
+.projectintroinformation {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 40px;
+    text-align:left;
+    max-width: 1200px;
+  margin: 0 auto;
+  background: rgb(41, 87, 197,0.2);;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.introContext{
+   padding: 0;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.leftText {
+    flex: 1;
+    text-align: left;
+}
+
+.rightNotes {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  align-content: start;
+}
+
+.noteBox {
+  background: #507fe6;
+  padding: 12px 14px;
+  border-radius: 2px;
+  box-shadow: 4px 4px 0px #2957c5;
+}
+
+.noteBox strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.noteBox p {
+  margin: 0;
+  font-weight: 400;
+}

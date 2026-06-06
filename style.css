@@ -15,18 +15,7 @@ body {
     linear-gradient(to bottom, transparent 31px, #f0e8f8 3px);
   background-size: 100% 32px;
 }
-header {
-  padding: 30px;
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 0px;
-}
-.logo img {
-  width: 150px;
-}
+
 /*wonderful whimsical rainbow trail*/
 .trail {
   position: fixed;
@@ -42,6 +31,22 @@ nav {
     transform: scale(0.3);
   }
 }
+
+
+/*GENERAL STYLING*/
+header {
+  padding: 30px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px;
+}
+.logo img {
+  width: 150px;
+}
+
 
 a {
   text-decoration: none;
@@ -120,7 +125,7 @@ a {
   line-height: 1.5;
 }
 
-/*landing page highlight*/
+/*landing page highlighted text*/
 .highlight1 {
   background: #c78bfc;
   padding: 0 6px;
@@ -156,58 +161,11 @@ button:hover {
   padding:50px;
 }
 
-/*not used atm
-.projectStatement {
-  color: white;
-} */
 
-/*explore other projects*/
+/*explore da projects*/
 .explore {
   font-size: 38px;
 }
-
-/* TESTING LAYOUT
-.projectCard {
-  position: relative;
-  width: 300px;
-  margin: 100px auto;
-  padding: 2rem;
-  background: #d8b2f7;
-  border: 2px solid #9f5dd4;
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: 8px 8px 0px #7c46a8;
-  transform: rotate(-1deg);
-}
-
-.projectCard {
-  background: #d8b2f7;
-  transition: 0.3s ease;
-}
-
-.projectCard.leftCard {
-  background: #d8b2f7;
-  transition: 0.3s ease;
-}
-
-.projectCard:hover {
-  background: #4d2072;
-  transform: scale(1.08);
-}
-
-.tape {
-  position: absolute;
-  width: 100px;
-  height: 30px;
-  background: rgba(236, 204, 21, 0.639);
-  top: -15px;
-  left: 50%;
-  transform:
-    translateX(-50%) rotate(-6deg);
-  border-left: 1px solid rgba(255, 255, 255, 0.4);
-  border-right: 1px solid rgba(255, 255, 255, 0.974);
-  backdrop-filter: blur(2px);
-}
-  */
 
 /* Hover Circle 'open project' */
 .projectSection {
@@ -301,49 +259,23 @@ button:hover {
 }
 
 
-/*CASE STUDY STYLING */
-.projectImage {
-  width: 100%;
-  height: 550px;
-  object-fit: cover;
-  display: block;
-}
-#projectTitle {
-  text-align: left;
-  font-weight: 700;
-  color: rgba(97, 94, 94, 0.643);
-  padding: 0 100px;
-  margin: 40px 0 10px 0;
-}
-.projectInfoTitle {
-margin: 0px 0 10px 0;
-  padding: 0 100px;
-  text-align: left;
-  font-size:70px;
-}
 
-/*Project Overview Section -- TESTING SOMETHING ATM
-.projectInfo {
-  text-align: left;
-  padding: 20px;
-}
-.projectInfo.Title {
- margin-top: 0px;
-   font-size: 34px;
-}
 
-.projectInfo.Body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 35px;
-}
-.projectBaseInfo {
-  text-align: left;
-}
-.projectBlurb {
-  text-align: right;
-}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Project Overview Section*/
 .projectInfo {
@@ -516,6 +448,8 @@ font-style: italic;
 }
 
 
+
+
 /*between end of Project and view other projects*/
 .largeDivider {
   height: 3px;             
@@ -546,27 +480,3 @@ footer {
 }
 
 
-
-/*TEST CODE
-
-body {
-  margin: 0;
-  font-family: sans-serif;
-}
-Main constrained content
-.testcontent {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-Regular images stay inside content width
-.testnormal-img {
-  width: 100%;
-  display: block;
-}
-Full-width breakout image
-.testfull-bleed {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  display: block;
-}*/
