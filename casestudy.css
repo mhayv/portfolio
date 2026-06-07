@@ -107,13 +107,10 @@
   max-width: 1600px;
   padding: 0 90px;
   align-items: flex-start;
-  margin: 0 auto 100px auto;
+  margin: 0 auto 40px auto;
 }
 
-/* reversed version, but idk if i will use it
-.contentRow.reverse {
-  flex-direction: row-reverse;
-}*/
+
 .sectionText h2 {
   margin-top: 0;
   margin-bottom: 0;
@@ -129,7 +126,7 @@
   margin-top: 5px;
 }
 
-/* insights / tldr box*/
+/* summary box*/
 .processKey {
   background: rgb(41, 87, 197, 0.2);
   border-radius: 6px;
@@ -153,27 +150,34 @@
   padding: 0 90px;
 }
 
-.bgImg {
-  width: 100%;
+.bgImg.fullWidth{
+width: 100%;
+  height: 750px;
+  object-fit: cover;
   display: block;
   border-radius: 4px;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-.bgImg.large {
-  width: 100%;
+.imageRow {
+  display: flex;
+  gap: 20px;
 }
 
-.bgImg.medium {
-  width: 70%;
-  margin: 0 auto 20px auto;
-}
-
-.bgImg.small {
+.imageRow img {
   width: 50%;
-  margin: 0 auto 20px auto;
+  display: block;
+  background:pink;
+  border-radius :4px;
+  
 }
 
+.gallerySpace {
+  padding: 10px;
+}
+
+/*
 .galleryLayout {
   max-width: 1600px;
   margin: 0 auto;
@@ -186,15 +190,51 @@
 .portraitImg {
   width: 100%;
   height: 100%;
-background-color:red;
+  background-color:red;
   object-fit: cover;
-
   grid-row: span 2;
+  border-radius: 4px;
 }
 
 .landscapeImg {
   width: 100%;
   height: 300px;
-
   object-fit: cover;
+  background-color: blue;
+  border-radius: 4px;
+}*/
+
+.galleryLayout {
+  display: flex;
+  gap: 20px;
+}
+
+.videoColumn {
+  flex: 0.7;
+}
+
+.imageColumn {
+  flex: 1.3;
+}
+
+.videoColumn video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+}
+
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imageColumn img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
 }
