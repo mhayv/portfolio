@@ -5,6 +5,7 @@
   object-fit: cover;
   display: block;
 }
+
 #projectTitle {
   text-align: left;
   font-weight: 700;
@@ -12,38 +13,39 @@
   padding: 0 100px;
   margin: 40px 0 10px 0;
 }
+
 .projectInfoTitle {
-margin: 0px 0 10px 0;
+  margin: 0px 0 10px 0;
   padding: 0 100px;
   text-align: left;
-  font-size:70px;
+  font-size: 70px;
 }
 
 
 
-
+/*first blobs of text in the case studies*/
 .projectintroinformation {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 40px;
-    text-align:left;
-    max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 40px;
+  text-align: left;
+  max-width: 1200px;
   margin: 0 auto;
-  background: rgb(41, 87, 197,0.2);;
+  background: rgb(41, 87, 197, 0.2);
   border-radius: 8px;
   padding: 40px;
 }
 
-.introContext{
-   padding: 0;
+.introContext {
+  padding: 0;
   font-weight: 400;
   line-height: 1.8;
 }
 
 .leftText {
-    flex: 1;
-    text-align: left;
+  flex: 1;
+  text-align: left;
 }
 
 .rightNotes {
@@ -56,8 +58,8 @@ margin: 0px 0 10px 0;
 
 .noteBox {
   background: #507fe6;
-  padding: 12px 14px;
   border-radius: 2px;
+  padding: 12px 14px;
   box-shadow: 4px 4px 0px #2957c5;
 }
 
@@ -69,4 +71,130 @@ margin: 0px 0 10px 0;
 .noteBox p {
   margin: 0;
   font-weight: 400;
+}
+
+
+/*box trio*/
+.projectBrief {
+  display: flex;
+  text-align: left;
+  margin-top: 25px;
+  padding: 0px 80px;
+}
+
+.briefBox {
+  background: transparent;
+  border: 3px solid #507fe6;
+  border-radius: 6px;
+  padding: 0px 15px;
+  margin: 5px 15px;
+}
+
+
+
+
+/* Process information*/
+.leftTitle {
+  text-align: left;
+  margin-top: 45px;
+  padding: 0px 95px;
+  margin-bottom: 20px;
+}
+
+.contentRow {
+  display: flex;
+  gap: 90px;
+  max-width: 1600px;
+  padding: 0 90px;
+  align-items: flex-start;
+  margin: 0 auto 100px auto;
+}
+
+/* reversed version, but idk if i will use it
+.contentRow.reverse {
+  flex-direction: row-reverse;
+}*/
+.sectionText h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sectionText {
+  flex: 1;
+  text-align: left;
+}
+
+.projectText {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+/* insights / tldr box*/
+.processKey {
+  background: rgb(41, 87, 197, 0.2);
+  border-radius: 6px;
+  padding: 1px 0px 5px 20px;
+}
+
+.sectionVisual {
+  flex: 1;
+}
+
+.sectionVisual img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+/*Final Outcome Image Gallery*/
+.finalOutcomeImages {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 90px;
+}
+
+.bgImg {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.bgImg.large {
+  width: 100%;
+}
+
+.bgImg.medium {
+  width: 70%;
+  margin: 0 auto 20px auto;
+}
+
+.bgImg.small {
+  width: 50%;
+  margin: 0 auto 20px auto;
+}
+
+.galleryLayout {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.portraitImg {
+  width: 100%;
+  height: 100%;
+background-color:red;
+  object-fit: cover;
+
+  grid-row: span 2;
+}
+
+.landscapeImg {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
 }
