@@ -49,7 +49,7 @@ font-family: "aktiv-grotesk-condensed", sans-serif;
   font-size: 30px;
   color: #6a27bd;
   text-decoration: none;
-
+  padding:28px;
   display: inline-block; /* IMPORTANT for transform */
   transition: all 0.25s ease;
 }
@@ -167,10 +167,10 @@ a {
 button {
   padding: 15px 20px;
   border: none;
-  background-color: rgb(148, 97, 231);
+  background-color: rgb(118, 64, 197);
   color: white;
   cursor: e-resize;
-  border-radius: 50px;
+  border-radius: 4px;
   display: flex;
   justify-content: flex-start;
   margin: 20px 0px;
