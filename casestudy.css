@@ -178,14 +178,29 @@ width: 100%;
 .imageRow {
   display: flex;
   gap: 20px;
+  align-items: stretch;
 }
 
 .imageRow img {
   width: 50%;
   display: block;
   background:pink;
-  border-radius :4px;
-  
+  border-radius :4px; 
+}
+
+.imageRow img,
+.imageRow video {
+  flex: 1;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.fullWidthVideo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
 }
 
 .gallerySpace {
