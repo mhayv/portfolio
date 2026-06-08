@@ -32,7 +32,7 @@
   text-align: left;
   max-width: 1200px;
   margin: 0 auto;
-  background: rgb(41, 87, 197, 0.2);
+  background: rgba(98, 41, 197, 0.2);
   border-radius: 8px;
   padding: 40px;
 }
@@ -57,10 +57,11 @@
 }
 
 .noteBox {
-  background: #507fe6;
+  background: #8550e6;
   border-radius: 2px;
   padding: 12px 14px;
-  box-shadow: 4px 4px 0px #2957c5;
+  box-shadow: 4px 4px 0px #7229c5;
+  color: rgb(238, 238, 238);
 }
 
 .noteBox strong {
@@ -88,7 +89,7 @@
 
 .briefBox {
   background: transparent;
-  border: 3px solid #507fe6;
+  border: 3px solid #8550e6;
   border-radius: 6px;
   padding: 0px 15px;
   margin: 5px 15px;
@@ -132,7 +133,7 @@
 
 /* summary box*/
 .processKey {
-  background: rgb(41, 87, 197, 0.2);
+  background: rgba(96, 41, 197, 0.2);
   border-radius: 6px;
   padding: 1px 0px 5px 20px;
 }
@@ -186,6 +187,11 @@ width: 100%;
   display: block;
   background:pink;
   border-radius :4px; 
+}
+
+.portraitRow img {
+  height: 900px !important; /* choose your own height */
+  object-fit: cover !important;
 }
 
 .imageRow img,
