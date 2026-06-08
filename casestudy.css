@@ -73,6 +73,10 @@
   font-weight: 400;
 }
 
+.noteBox.team {
+  grid-column: span 2;
+}
+
 
 /*box trio*/
 .projectBrief {
@@ -237,4 +241,85 @@ width: 100%;
   object-fit: cover;
   border-radius: 4px;
   display: block;
+}
+
+/*line between reflection and view more projects*/
+.endProjectLine{
+border: none;
+  height: 3px;
+  background: #507fe6;
+  width: 90%;
+  margin: 60px auto;
+  border-radius: 2px;
+}
+
+
+/*view more projects*/
+.moreProjects {
+  max-width: 1600px;
+  margin: 80px auto;
+  padding: 0 90px;
+}
+
+.moreProjectsTitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.projectThumb {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  display: block;
+}
+
+.projectThumb img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,0.55);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.overlay h3 {
+  color: white;
+  font-size: 32px;
+}
+
+.projectThumb:hover .overlay {
+  opacity: 1;
+}
+
+.backHome {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.backHome a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.backHome a:hover {
+  text-decoration:underline;
 }
