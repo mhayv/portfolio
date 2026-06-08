@@ -51,18 +51,24 @@ nav {
 a {
   text-decoration: none;
 }
+/*nav bar links*/
 .navLinks a {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  background: #ae6edf;
+  color: #7130a2;
+  border: 2px solid #ae6edf;
+  background: transparent;
   padding: 8px 15px;
-  border-radius:12px;
+  margin: 5px;
   display: inline-block;
-  margin:5px;
+  border-radius: 12px;
+  transition: 0.2s ease;
 }
+
 .navLinks a:hover {
-  transform: scale(1.08);
-  background: #dbb6ff;
+  background: #ae6edf;
+  color: white;
+  letter-spacing: 1px;
+  transform: rotate(2deg) scale(1.05);
 }
 
 /* testing
