@@ -360,3 +360,40 @@ border: none;
 .wonky{
    transform: rotate(3deg);
 }
+
+.platforms {
+  background: rgba(96, 41, 197, 0.2);
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom:50px;
+  padding-bottom:20px;
+}
+
+.platformRow {
+  display: flex;
+  gap: 50px;
+}
+
+.platformGroup {
+  flex: 1;
+}
+
+.platformLabel {
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-align:left;
+}
+
+.platformIcons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  height:30px;
+}
+
+.platformIcons img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
