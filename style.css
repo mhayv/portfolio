@@ -222,15 +222,17 @@ button:hover {
   transform: translate(-50%, -50%) rotate(-6deg) scale(1);
 }
 .hoverCircle.journal{
-  background: #ff3fd2;
+  background: #d132ac;
   border: 2px solid rgb(117, 6, 98);
   box-shadow: 4px 4px 0px rgb(117, 6, 98);
+  color:white;
   transform: translate(-50%, -50%) rotate(6deg) scale(0.8);
 }
 .hoverCircle.data{
   background: #3f75ff;
   border: 2px solid rgb(6, 30, 117);
   box-shadow: 4px 4px 0px rgb(6, 30, 117);
+  color:white;
   transform: translate(-50%, -50%) rotate(6deg) scale(0.8);
 }
 .hoverCircle.metro{
