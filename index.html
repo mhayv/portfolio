@@ -7,10 +7,10 @@
   <title>Mhayvine Joy | Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.typekit.net/rmv5ybo.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 
-<body>
+<body class="homePage">
   <div id="trail-container"></div>
   <header>
     <nav>
@@ -33,9 +33,9 @@
   <main>
     <!--update to landing image :D-->
     <div class="landing">
-
+      <!--
       <div class="landingTextGroup">
-        <!--Gsap text animation for 'landingText'-->
+       
         <h1 class="landingText">Playful interaction,</h1>
         <h1 class="landingText">Meaningful impact.</h1>
 
@@ -47,148 +47,128 @@
         <a href="about.html">
           <button id="btn"><strong>more about me</strong></button>
         </a>
+      </div>-->
+      <!--
+      <img src="assets/placeholderheropic.jpeg" class="landingHero" alt="Hero image">
+      
+    
+      -->
+
+
+
+
+
+      <div class="landing">
+
+        <div class="heroCenter">
+
+          <div class="heroTitle">
+            <div class="sprinkleText">
+              <span class="letter">a</span>
+              <span class="letter">&nbsp;</span>
+              <span class="letter">s</span>
+              <span class="letter">p</span>
+              <span class="letter">r</span>
+              <span class="letter">i</span>
+              <span class="letter">n</span>
+              <span class="letter">k</span>
+              <span class="letter">l</span>
+              <span class="letter">e</span>
+              <span class="letter">&nbsp;</span>
+              <span class="letter">o</span>
+              <span class="letter">f</span>
+            </div>
+
+            <img src="assets/landing_JOY.png" class="joyImg">
+          </div>
+
+          <div class="landingTextGroup">
+            <p id="text">
+              Designing <span class="highlight1">engaging and approachable experiences</span><br>
+              that encourage reflection, interaction, and
+              <span class="highlight2">human connection</span>
+            </p>
+          </div>
+<h3 class="scrollHint">SCROLL TO EXPLORE</h3>
+        </div>
+
       </div>
-<!--
-      <img src="assets/placeholderheropic.jpeg" class="landingHero" alt="Hero image">-->
+      <div id="sprinkleContainer"></div>
 
-
-    </div>
-        <div class="space2"></div>
-     <div class="space2"></div>
-     <h3>SCROLL TO INTERACT</h3>
-      <div class="space2"></div>
+      
 
 
 
-    <!--  Jumbled style text, if ever I want to use it..
-  <h1 class="jumbled">
-  <span>M</span>
-  <span>H</span>
-  <span>A</span>
-  <span>Y</span>
-  <span>V</span>
-</h1>
--->
-    <!-- LAYOUT TESTING
-  <div class="projectSection">
-    <a href="journaltable.html">
-      <div class="projectCard leftCard">
-          <div class="tape"></div>
-          <h2>Journal Table</h2>
-          <p>A project to encourage people to turn to creative journaling as a hobby.</p>
-      </div>
-    </a>
-  </div>
-
-  <div class="projectSection">
-    <a href="metromission.html">
-      <div class="projectCard rightCard">
-          <div class="tape"></div>
-          <h2>Data Leak</h2>
-          <p>Raising awareness on shared data, and visualizing it existing alongside others..</p>
-      </div>
-    </a>
-  </div>
-
-      <div class="projectSection">
-    <a href="metromission.html">
-      <div class="projectCard leftCard">
-          <div class="tape"></div>
-          <h2>Metro Mission</h2>
-          <p> Exploring how positive behavior goes a long way lol idk</p>
-      </div>
-    </a>
-  </div>
-
-  -->
 
 
-    <h3 class="explore">Explore some of my Projects</h3>
-    <!--
-    <div class="journalTable">
-      <div class="hoverCircle">
-        Open Project
-      </div>
+      <h3 class="explore">Explore some of my Projects</h3>
+
+
       <a href="journaltable.html" class="projectLink">
         <div class="projectSection leftLayout">
-          <img src="assets/journalTableHero.png" alt="Journal Table cover">
+
+          <img src="assets/journal_cover.png" alt="Journal Table cover">
+
           <div class="projectCard">
             <div class="tape"></div>
             <h2>Journal Table</h2>
-            <p>
-              A project to encourage people to turn to
-              creative journaling as a hobby.
-            </p>
+            <p>A project to encourage people to turn to creative journaling as a hobby.</p>
           </div>
+          <div class="hoverCircle journal">
+            Open Project
+          </div>
+
         </div>
       </a>
-    </div>-->
 
-    <a href="journaltable.html" class="projectLink">
-      <div class="projectSection leftLayout">
 
-        <img src="assets/journal_cover.png" alt="Journal Table cover">
+      <a href="dataleak.html" class="projectLink">
+        <div class="projectSection rightLayout">
 
-        <div class="projectCard">
-          <div class="tape"></div>
-          <h2>Journal Table</h2>
-          <p>A project to encourage people to turn to creative journaling as a hobby.</p>
+          <img src="assets/data_cover.png" alt="Data Leak project cover">
+
+          <div class="projectCard">
+            <h2>Data Leak</h2>
+            <p>
+              Raising awareness on shared data,
+              and visualizing it existing alongside others.
+            </p>
+          </div>
+          <div class="hoverCircle data">
+            Open Project
+          </div>
+
         </div>
-        <div class="hoverCircle journal">
-          Open Project
+      </a>
+
+      <a href="metromission.html" class="projectLink">
+        <div class="projectSection leftLayout">
+          <img src="assets/metro_cover.png" alt="Metro Mission project cover">
+
+          <div class="projectCard">
+            <div class="tape"></div>
+            <h2>Metro Mission</h2>
+            <p>
+              Exploring how positive behavior goes a long way
+            </p>
+          </div>
+
+          <div class="hoverCircle metro">
+            Open Project
+          </div>
+
         </div>
-
-      </div>
-    </a>
-
-
-    <a href="dataleak.html" class="projectLink">
-      <div class="projectSection rightLayout">
-
-        <img src="assets/data_cover.png" alt="Data Leak project cover">
-
-        <div class="projectCard">
-          <h2>Data Leak</h2>
-          <p>
-            Raising awareness on shared data,
-            and visualizing it existing alongside others.
-          </p>
-        </div>
-        <div class="hoverCircle data">
-          Open Project
-        </div>
-
-      </div>
-    </a>
-
-    <a href="metromission.html" class="projectLink">
-      <div class="projectSection leftLayout">
-        <img src="assets/metro_cover.png" alt="Metro Mission project cover">
-
-        <div class="projectCard">
-          <div class="tape"></div>
-          <h2>Metro Mission</h2>
-          <p>
-            Exploring how positive behavior goes a long way
-          </p>
-        </div>
-
-        <div class="hoverCircle metro">
-          Open Project
-        </div>
-
-      </div>
-    </a>
+      </a>
 
 
 
-    <div class="space"></div>
-    <hr>
-    <footer><!--link this to the connect page
+      <div class="space"></div>
+      <hr>
+      <footer><!--link this to the connect page
     <a href=""></a>-->
-      <p class="footerConnect">Choose Joy! Let's Connect :D</p>
-      <p class="footerCredit">Mhayvine Joy 2026 &copy;</p>
-    </footer>
+        <p class="footerConnect">Choose Joy! Let's Connect :D</p>
+        <p class="footerCredit">Mhayvine Joy 2026 &copy;</p>
+      </footer>
   </main>
 
 
