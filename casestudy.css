@@ -143,13 +143,8 @@
 
 .sectionVisual {
   flex: 1;
-  transition: 0.3s ease;
 }
 
-.sectionVisual:hover {
-  transform: rotate(2deg);
-
-}
 
 .sectionVisual img {
   width: 100%;
@@ -367,13 +362,17 @@ border: none;
 
 /*about page*/
 
+.hiText{
+  font-size:30px;
+}
+
 .nameTooltip {
   position: relative;
   display: inline-block;
 
   text-decoration: underline;
   text-decoration-thickness: 3px;
-  text-decoration-color: #ae6edf;
+  text-decoration-color: #8943bd;
 
   cursor: help;
 }
@@ -383,7 +382,7 @@ border: none;
   left: 50%;
   transform: translateX(-50%);
 
-  background: #ae6edf;
+  background: #7c33b3;
   color: white;
 
   padding: 6px 10px;
@@ -401,6 +400,12 @@ border: none;
 .nameTooltip:hover .tooltip {
   opacity: 1;
   transform: translateX(-50%) translateY(-4px);
+}
+.tilted {
+  display: inline-block;
+  transform: skew(-8deg);
+  font-size: 35px;
+  margin-bottom:0px;
 }
 
 
@@ -426,7 +431,7 @@ border: none;
 }
 
 .aboutParagraph {
-  font-size: 15px;
+  font-size: 20px;
   margin-top: 5px;
 }
 
@@ -499,6 +504,7 @@ border: none;
 .platformSection {
   display: flex;
   gap: 60px;
+  margin-bottom:25px;
 }
 
 .platformGroup h4 {

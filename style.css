@@ -84,21 +84,11 @@ nav > * {
   font-family: "aktiv-grotesk-condensed", sans-serif;
   font-weight: 800;
   font-size: 30px;
-  color: #6a27bd;
+  color: #5104af;
   text-decoration: none;
   padding: 28px;
   display: inline-block;
-  /* IMPORTANT for transform */
   transition: all 0.25s ease;
-}
-
-.textLogo a:hover {
-  background: #bd75f4;
-  color: white;
-  letter-spacing: 1px;
-  transform: rotate(2deg) scale(1.05);
-  padding: 2px 6px;
-  border-radius: 4px;
 }
 
 .logo img {
