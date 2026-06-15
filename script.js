@@ -102,7 +102,7 @@ function createSprinkle(x, y) {
   });
 }
 
-function sprinkleRain(amount = 150) {
+function sprinkleRain(amount = 100) {
 
   for (let i = 0; i < amount; i++) {
 

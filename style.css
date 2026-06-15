@@ -41,7 +41,7 @@ header {
 }
 
 nav {
- position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -54,17 +54,27 @@ nav {
   padding: 20px 45px;
   box-sizing: border-box;
 
-  background: rgba(253, 245, 235, 0.9);
+  overflow: hidden;
   backdrop-filter: blur(10px);
+}
+nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
 
-  transition: all 0.35s ease;
+  background-image: url("assets/footerBG.png");
+  background-repeat: repeat;
+  background-size: cover;
+
+  opacity: 0.13; /* 👈 THIS controls image opacity */
+
+  pointer-events: none;
+  z-index: 0;
 }
 
-
-.aboutPage nav {
-  opacity: 1;
-  transform: none;
-  pointer-events: auto;
+nav > * {
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -143,9 +153,9 @@ a {
 
 #text {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 35px;
   line-height: 1.6;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 20px auto;
   text-align: center;
 }
@@ -164,7 +174,7 @@ a {
   align-items: center;
   text-align: center;
   gap: 20px;
-   padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .scrollHint {
@@ -173,6 +183,7 @@ a {
   opacity: 0.7;
   font-size: 14px;
   letter-spacing: 2px;
+  color:#6a27bd;
 }
 
 
@@ -186,25 +197,28 @@ a {
   text-align: center;
 }
 
-/* treat text as a single centered block */
 .sprinkleText {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3rem;
+  font-size: 8rem;
   font-weight: 600;
+  color:#290e49;
 }
 
-/* remove weird inline spacing bias */
 .letter {
   display: inline-block;
 }
 
-/* image balance fix */
+/* joy pic balance */
 .joyImg {
-  width: 280px;
+  width: 300px;
   transform-origin: center;
   display: block;
+  transition: 0.6s ease;
+}
+.joyImg:hover {
+  transform: rotate(2deg) scale(1.3);
 }
 
 /* FULL SCREEN SPRINKLES */
@@ -227,7 +241,6 @@ a {
 
 
 
-
 /*landing page highlighted text*/
 .highlight1 {
   background: #c78bfc;
@@ -243,29 +256,13 @@ a {
   border-radius: 2.5px;
 }
 
-/*about me button*/
-button {
-  padding: 15px 20px;
-  border: none;
-  background-color: rgb(118, 64, 197);
-  color: white;
-  cursor: e-resize;
-  border-radius: 4px;
-  display: flex;
-  justify-content: flex-start;
-  margin: 20px 0px;
-}
-
-button:hover {
-  background-color: rgb(97, 55, 168);
-  transition: 0.2s ease;
-  transform: scale(1.08);
-}
-
 .space2 {
   padding: 50px;
 }
 
+#work {
+  scroll-margin-top: 200px;
+}
 
 /*explore da projects*/
 .explore {
@@ -298,6 +295,7 @@ button:hover {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
+  box-shadow: offset-x offset-y blur-radius spread-radius color inset;
 }
 
 .projectSection:hover .hoverCircle {
@@ -329,6 +327,12 @@ button:hover {
   transform: translate(-50%, -50%) rotate(6deg) scale(0.8);
 }
 
+.projectLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .projectSection {
   display: flex;
   align-items: center;
@@ -337,11 +341,6 @@ button:hover {
   padding: 0 40px;
   max-width: 1200px;
   transition: 0.3s ease;
-}
-
-.projectSection:hover {
-  transform: scale(1.02);
-  cursor: pointer;
 }
 
 .leftLayout {
@@ -358,22 +357,32 @@ button:hover {
 
 .projectSection img {
   width: 50%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
 }
 
 .projectCard {
-  width: 50%;
+  flex: 1;
+  text-align: left;
 }
 
-.projectLink {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+.projectSection:hover {
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
+.projectBlurb {
+  font-size: 35px;
+  line-height: 1.5;
+}
 
-
-
-
+.little {
+  font-weight: 800;
+  opacity: 0.5;
+  margin-bottom: 6px;
+}
 
 
 
@@ -451,21 +460,6 @@ button:hover {
   transform: rotate(1deg);
 }
 
-/* RIGHT SIDE */
-.blurbWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-  max-width: 800px;
-  padding-left: 30px;
-}
-
-.projectBlurb {
-  margin: 0;
-  text-align: left;
-  line-height: 2.5;
-  font-weight: 400;
-}
 
 
 /*Deeper Project Information, i.e problem, evolution, etc*/
@@ -597,18 +591,75 @@ hr {
 }
 
 /*footer*/
-footer {
-  padding-bottom: 40px;
+.siteFooter {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 45px;
+  align-items: flex-start;
+  padding: 80px 60px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("assets/footerBG.png");
+  background-repeat: repeat;
+  background-size: cover;
+  gap: 300px;
+}
+.siteFooter::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(253, 245, 235, 0.90); 
+  pointer-events: none;
+}
+.siteFooter > * {
+  position: relative;
+  z-index: 1;
 }
 
-.footerConnect {
+.footerLeft {
+  max-width: 50%;
   text-align: left;
 }
 
-.footerCredit {
-  text-align: right;
+.footerLeft h2 {
+  font-size: 46px;
+  margin: 0 0 10px 0;
+  display: inline-block;
+  border-bottom: 3px solid #8550e6;
+  padding-bottom: 0.2rem;
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.footerRight h3{
+  border-bottom: 3px solid #8550e6;
+}
+
+.footerRight a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  color: #000;
+  font-weight: 500;
+
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footerRight a:hover {
+  transform: translateX(6px);
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .siteFooter {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footerRight {
+    text-align: left;
+  }
 }

@@ -1,9 +1,10 @@
 /*CASE STUDY STYLING*/
 .projectImage {
   width: 100%;
-  height: 550px;
+  height: 750px;
   object-fit: cover;
   display: block;
+  margin-top: 75px;
 }
 
 #projectTitle {
@@ -35,6 +36,7 @@
   background: rgba(98, 41, 197, 0.2);
   border-radius: 8px;
   padding: 40px;
+  margin-top: 100px;
 }
 
 .introContext {
@@ -85,6 +87,7 @@
   text-align: left;
   margin-top: 25px;
   padding: 0px 80px;
+  margin-bottom:80px;
 }
 
 .briefBox {
@@ -115,10 +118,10 @@
   margin: 0 auto 40px auto;
 }
 
-
 .sectionText h2 {
   margin-top: 0;
   margin-bottom: 0;
+  font-size:40px;
 }
 
 .sectionText {
@@ -140,6 +143,12 @@
 
 .sectionVisual {
   flex: 1;
+  transition: 0.3s ease;
+}
+
+.sectionVisual:hover {
+  transform: rotate(2deg);
+
 }
 
 .sectionVisual img {
@@ -357,43 +366,204 @@ border: none;
 }
 
 /*about page*/
-.wonky{
-   transform: rotate(3deg);
+
+.nameTooltip {
+  position: relative;
+  display: inline-block;
+
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ae6edf;
+
+  cursor: help;
+}
+.tooltip {
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background: #ae6edf;
+  color: white;
+
+  padding: 6px 10px;
+  border-radius: 2px;
+
+  font-size: 13px;
+  white-space: nowrap;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.15);
+}
+.nameTooltip:hover .tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-4px);
 }
 
-.platforms {
-  background: rgba(96, 41, 197, 0.2);
-  border-radius: 6px;
-  padding: 20px;
-  margin-bottom:50px;
-  padding-bottom:20px;
-}
 
-.platformRow {
+
+.aboutRow {
   display: flex;
-  gap: 50px;
+  gap: 90px;
+  max-width: 1600px;
+  padding: 0 90px;
+  align-items: flex-start;
+  margin: 0 auto 40px auto;
 }
 
-.platformGroup {
+.aboutTextSection {
   flex: 1;
+  text-align: left;
 }
 
-.platformLabel {
-  font-weight: 700;
-  margin-bottom: 12px;
-  text-align:left;
+.aboutTextSection h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 40px;
 }
 
-.platformIcons {
+.aboutParagraph {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.aboutVisual {
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.aboutVisual:hover {
+  transform: rotate(2deg);
+}
+
+.aboutVisual img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.wonky{
+  width: 40%;
+  max-width: 450px;
+  height: auto;
+}
+.photoTape {
+  position: relative;
+  display: inline-block;
+}
+
+/* tape strip top */
+.photoTape::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 20px;
+
+  width: 160px;
+  height: 40px;
+
+  background: rgba(148, 25, 255, 0.4);
+  border: 1px solid rgba(162, 40, 237, 0.08);
+
+  transform: rotate(-4deg);
+  z-index: 2;
+  backdrop-filter: blur(2px);
+}
+
+/* tape strip bottom */
+.photoTape::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 20px;
+
+ width: 160px;
+  height: 40px;
+
+  background: rgba(255, 16, 255, 0.4);
+  border: 1px solid rgba(255, 17, 251, 0.08);
+
+  transform: rotate(3deg);
+  z-index: 2;
+  backdrop-filter: blur(2px);
+}
+
+.photoTape img {
+  position: relative;
+  z-index: 1;
+}
+
+.platformSection {
   display: flex;
-  gap: 12px;
-  align-items: center;
-  flex-wrap: wrap;
-  height:30px;
+  gap: 60px;
 }
 
-.platformIcons img {
-  width: 48px;
-  height: 48px;
+.platformGroup h4 {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
   object-fit: contain;
+}
+
+.iconGrid {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.iconItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.iconItem img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+
+  filter: drop-shadow(2px 2px 0px rgba(0,0,0,0.1));
+}
+
+
+.platformBox {
+  background:transparent;
+  border: 2px solid rgba(133, 80, 230, 0.6);
+  border-radius: 4px;
+
+  padding: 20px 25px;
+  margin-top: 0px;
+}
+.platformTitle {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: left;
+}
+.platformGrid {
+  display: flex;
+  gap: 60px;
+}
+.platformColumn h4 {
+  margin: 0 0 8px 0;
+  font-weight: 700;
+  text-align: left;
+}
+
+.platformColumn p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 1.4;
 }
