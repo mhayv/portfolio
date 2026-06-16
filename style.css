@@ -79,7 +79,7 @@ nav > * {
 
 
 
-
+/*
 .textLogo {
   font-family: "aktiv-grotesk-condensed", sans-serif;
   font-weight: 800;
@@ -89,10 +89,20 @@ nav > * {
   padding: 28px;
   display: inline-block;
   transition: all 0.25s ease;
-}
+}*/
 
 .logo img {
-  width: 150px;
+  width: 120px;
+  height: auto;
+  display: block;
+}
+.logo img {
+  width: 220px;
+  transition: transform 0.25s ease;
+}
+
+.logo img:hover {
+  transform: rotate(2deg) scale(1.05);
 }
 
 
