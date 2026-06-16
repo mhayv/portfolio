@@ -10,6 +10,124 @@ main {
   padding-bottom: 100px;
 }
 
+/* ==========================
+PROJECT INTRO
+========================== */
+
+.projectIntro {
+    max-width: 1400px;
+    margin: 80px auto;
+    padding: 0 90px;
+}
+
+/* sentence */
+
+.projectSentence {
+    text-align: center;
+    font-size: 26px;
+    line-height: 1.5;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+/* divider */
+
+.introDivider {
+    border: none;
+    height: 2px;
+    background: rgba(133, 80, 230, 0.3);
+    margin: 35px 0;
+}
+
+/* ==========================
+META INFO
+========================== */
+
+.projectMeta {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+}
+
+.metaItem {
+    flex: 1;
+}
+
+.metaItem h4 {
+    margin-bottom: 8px;
+    color: #8550e6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.metaItem p {
+    margin: 0;
+    font-size: 18px;
+}
+
+/* ==========================
+CONTEXT AREA
+========================== */
+
+.contextSection {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+/* left side */
+
+.contextBox {
+    flex: 1;
+
+    border: 2px solid #8550e6;
+    border-radius: 6px;
+
+    padding: 30px;
+}
+
+.contextBox h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.contextBox p {
+    line-height: 1.8;
+}
+
+/* right side */
+
+.summaryBoxes {
+    flex: 1.2;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.summaryCard {
+    flex: 1;
+
+    border: 2px solid #8550e6;
+    border-radius: 4px;
+
+    padding: 20px;
+    margin:12px;
+}
+
+.summaryCard h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: #8550e6;
+}
+
+.summaryCard p {
+    margin: 0;
+    line-height: 1.6;
+}
+
 /* TITLES */
 .cs-title {
   font-size: 40px;
@@ -23,6 +141,35 @@ main {
   line-height: 1.6;
   margin-top: 20px;
   text-align: left;
+}
+
+.threeImageGallery {
+    display: flex;
+    gap: 12px;
+
+    max-width: 1400px;
+    padding: 0 90px;
+
+    margin: 40px auto 80px;
+    box-sizing: border-box;
+}
+.threeImageGallery img {
+    flex: 1 1 0;
+    min-width: 0;
+
+    height: 320px;
+    object-fit: cover;
+
+    display: block;
+    object-fit: cover;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.threeImageGallery img:hover {
+    transform: scale(1.02);
 }
 
 /* =========================
@@ -145,6 +292,31 @@ FULL WIDTH IMAGE BLOCK
 /* =========================
 RESPONSIVE
 ========================= */
+
+@media (max-width: 900px) {
+
+    .projectIntro {
+        padding: 0 20px;
+    }
+
+    .projectMeta {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contextSection {
+        flex-direction: column;
+    }
+
+    .threeImageGallery {
+    flex-direction: column;
+}
+
+.threeImageGallery img {
+    height: auto;
+}
+
+}
 
 @media (max-width: 900px) {
   .caseFlexBlock {

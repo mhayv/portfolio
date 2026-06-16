@@ -28,6 +28,18 @@
   font-size: 70px;
 }
 
+.heroImage {
+  width: 100%;
+  margin-top: 75px;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  display: block;
+}
+
 
 
 /*first blobs of text in the case studies*/
