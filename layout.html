@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Case Study Layout</title>
+  <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+
+<main>
+
+  <!-- WIDE IMAGE SECTION -->
+  <section class="cs-wide">
+    <h2 class="cs-title">Research & Insights</h2>
+
+    <img src="assets/metroMission_CharacterIllustration.png" alt="Research diagram showing key theories" class="zoomable">
+
+    <p class="cs-text">
+      This section explains the research direction and key psychological theories that informed the design process.
+    </p>
+  </section>
+
+  <!-- SPLIT SECTION -->
+  <section class="cs-split">
+
+    <div class="cs-split-text">
+      <h2 class="cs-title">Ideation Process</h2>
+
+      <p class="cs-text">
+        This stage focused on sketching ideas and testing different visual directions before settling on a final concept.
+      </p>
+    </div>
+
+    <div class="cs-split-image">
+      <img src="assets/metroMission_HiFiUI.png" alt="Ideation sketches and early wireframes" class="zoomable">
+    </div>
+
+  </section>
+
+  <!-- CASE STUDY FLEX BLOCK -->
+<section class="caseFlexBlock">
+
+  <!-- LEFT SIDE -->
+  <div class="caseColumn">
+
+    <div class="caseImage">
+      <img src="assets/metroMission-Inspo.png" alt="Left image">
+    </div>
+
+    <div class="caseText">
+      <p>
+        Left side explanation text goes here. You can use this alone if the right side is just visual support.
+      </p>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="caseColumn">
+
+    <div class="caseImage">
+      <img src="assets/metroMission_gameInspo.png" alt="Right image">
+    </div>
+
+    <div class="caseText">
+      <p>
+        Right side explanation text goes here. Use it when both visuals need explanation.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- WIDE IMAGE SECTION AGAIN -->
+  <section class="cs-wide">
+    <h2 class="cs-title">Final Outcome</h2>
+
+    <img src="assets/metroMission-scavenger.png" alt="Final design outcome mockup" class="zoomable">
+
+    <p class="cs-text">
+      The final design combines clarity, interaction, and a playful visual identity.
+    </p>
+  </section>
+
+</main>
+
+<!-- LIGHTBOX (put once only) -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img">
+  <p class="lightbox-caption"></p>
+</div>
+
+<script>
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.querySelector(".lightbox-img");
+const caption = document.querySelector(".lightbox-caption");
+const closeBtn = document.querySelector(".close");
+
+document.querySelectorAll(".zoomable").forEach(img => {
+  img.addEventListener("click", () => {
+    lightbox.classList.add("show");
+    lightboxImg.src = img.src;
+    caption.textContent = img.alt;
+  });
+});
+
+closeBtn.addEventListener("click", () => {
+  lightbox.classList.remove("show");
+});
+
+lightbox.addEventListener("click", (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove("show");
+  }
+});
+
+</script>
+
+</body>
+</html>

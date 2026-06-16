@@ -7,6 +7,12 @@
   margin-top: 75px;
 }
 
+.ideaBlurb {
+  font-size:40px;
+  margin-top:60px;
+  padding: 50px;
+}
+
 #projectTitle {
   text-align: left;
   font-weight: 700;
@@ -142,7 +148,7 @@
 }
 
 .sectionVisual {
-  flex: 1;
+  flex: 1.7;
 }
 
 
