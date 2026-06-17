@@ -215,15 +215,17 @@ CONTEXT AREA
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 6px;
+  border-radius: 60px;
   cursor: zoom-in;
   transition: transform 0.2s ease;
 }
 
 .cs-wide video {
   width: 100%;
+  max-width: 1200px;
   height: auto;
   display: block;
+  margin: 0 auto;
   border-radius: 6px;
 }
 
