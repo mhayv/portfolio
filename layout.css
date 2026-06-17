@@ -219,6 +219,13 @@ CONTEXT AREA
   transition: transform 0.2s ease;
 }
 
+.cs-wide video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
 .cs-wide img:hover {
   transform: scale(1.01);
 }
