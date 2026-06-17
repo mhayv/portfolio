@@ -104,7 +104,6 @@ CONTEXT AREA
 .contextBox h3 {
     margin-top: 0;
     margin-bottom: 15px;
-    border: 2px solid var(--project-color);
 }
 
 .contextBox p {
